@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Convertor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="heading">Unit Convertor</h1><br>
+        <p>Choose Units to Convert e.g Length.Click!</p>
+        <div id="content">
+            
+            <div class="content1">
+                <a href="length.html">Length</a>
+                <a href="temperature.html">temperature</a>
+                <a href="weight.html">weight</a><br><br>
+                <p>we are converting length!</p><br>
+            </div>
+
+            <div id="length">
+                <form action="">
+                <div class="content1">
+                    <label for="">input</label><br>
+                    <input type="text" placeholder="input" id="input" class="content2">
+                </div>
+    
+                <div class="content1">
+                    <h1>=</h1>
+                </div>
+    
+                <div class="content1">
+                    <label for="">result</label><br>
+                    <input type="text" placeholder="result" id="result" class="content2">
+                </div>
+                
+    
+                <div class="content1"><br><br>
+                    <p>From:
+                    <select name="" id="inputType">
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="kilometer">Kilometer</option>
+                        <!-- <option value="kelvin">Kelvin</option> -->
+                    </select>
+                </p>
+                </div>
+    
+                
+    
+                <div class="content1">
+                    <p>To:
+                    <select name="" id="resultType">
+                        <option value="inch">Inch</option>
+                        <option value="foot">Foot</option>
+                        <option value="yard">Yard</option>
+                        <option value="mile">Mile</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="kilometer">Kilometer</option>
+                    </select>
+                </p>
+                </div><br>
+            </div>
+
+           
+            <div class="content1">
+                <button type="button" id='btn' class="content2">Convert</button>
+               
+                <input type="text" id="result1" class="content2" disabled><br>
+                <button type="reset" id="reset">Clear</button>
+                <button id="reset" onclick="location.reload()">Refresh</button>
+            </form>
+                <p>Click on the button to Convert the length</p><br>
+                <span>please refresh if it fails to convert length!!!</span>
+            </div>
+        </div>
+        <br><br><br><p id="foot">@eritech Websites & Technology Group</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
